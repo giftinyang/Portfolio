@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My portfolio</title>
+    <style>
+
+        /*
+        * ************************
+        *  About me Css
+        **************************
+        */
+        .img1 img {
+            height: 300px;
+        }
+
+        .heading h1 {
+            color: black;
+            text-align: center;
+            border-style: solid;
+                       
+        }
+
+       
+
+
+        /*
+        * ************************
+        *  How can i help you?
+        **************************
+        */
+
+        .li-font {
+            font-size:24px;
+        }
+
+        .img2 img {
+            height: 300px;
+            padding-top: 100px;
+        }
+
+        /* styling  */
+        section {
+            padding: 2%  0;
+        }
+        #first-section{
+           background-color:rgb(214, 214, 231);
+        }
+
+        img {
+            width: 100%;
+        }
+        .cl {
+            width:46%;
+            float: left;
+            margin: 2%;
+        }
+        .cl > p{
+            font-size : 24px;
+            line-height: 35px;
+            font-family: 'Times New Roman', Times, serif
+        }
+        .container {
+            width: 90%;
+           
+            margin: 0 auto;
+        }
+        .clear-fix {
+            clear: both;
+        }
+        .form label {
+            display: block;
+            width: 100%;
+            font-size: 24px;
+        }
+        .form-gp {
+            padding: 1%;
+        }
+        .form .form-input {
+            width: 100%;
+            border:1px solid #cccccc;
+            border-radius: 5px;
+        }
+        .form input.form-input {
+            height: 30px;
+        }
+        .form textarea.form-input {
+            height: 100px;
+        }
+        .btn {
+            padding: 2%;
+            width:200px;
+            background-color: aquamarine;
+            border:none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: aqua
+        }
+        .footer {
+           
+            height: 300px;
+            background-color: rgb(166, 199, 179);
+            padding: 5%;
+            text-align:center;
+        }
+        footer ul li {
+            display: inline-block;
+            margin: 2%;
+        }
+        .social-icon {
+            width: 50px;
+            height: 50px;
+        }
+        .social-icon:hover{
+            width: 40px;
+            height: 40px;
+        }
+        
+        
+        @media all and (max-width:765px){
+            .cl{
+                width:96%;
+            }
+            .cl-left {
+                float: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">About Me</h1>
+    <section class="container" id="first-section">
+        <div class="cl cl-left">
+            <img src="images/_MG_4139.jpg" alt="">
+        </div>
+
+        <div class="cl">
+            <p> A front-end developer's role is to combine design and business logic to achieve a user-facing product.<br> 
+                <br>
+                My name is <strong>Gift John</strong>, and i'm a front-end developer. <br> I build responsive site for brands.
+                I live in Akwa Ibom state but i call many places home.<br> A palm reader in india once told me i will
+                live the life of a magical gypay and its important for the world that i tell <br>the stories of the many
+                people I encounter on my journeys.That`s what am doing.
+            </p>
+        </div>
+        <div class="clear-fix"></div>
+        
+    </section>
+    <section class="container">
+        <h1 style="text-align:center; font-size:36px;">How can I help?</h1>
+            <div class="cl">
+                <h3>With my experience I can:</h3>
+                    <ul>
+                        <li class="li-font">Create responsive websites that work on a wide range of devices</li>
+                        <li class="li-font">Assist with production of clean and functional design</li>
+                        <li class="li-font">Bridge communication gap between designers and developers</li>
+                        <li class="li-font">Integrate your website into an easy to use content management system.</li>
+                    </ul>
+            </div> 
+
+
+            <div class="cl cl-left">
+                <img src="images/ai-artificial-intelligence-blur-546819.jpg" alt="">
+            </div>
+
+            <div class="clear-fix"></div>
+            
+        </section>
+
+        <section class="container">
+                <h1 style="text-align:center; font-size:36px;">Hobbie</h1>
+                    <div class="cl">
+                        <h3>What do I do from 8AM – 4PM?</h3>
+                        <p>Oh yes! i have hobbies too <br>I have been a web developer for 2 weeks and this have been my daily routine</p>
+                        <ul>
+                            <li class="li-font">I read, right and debug codes.</li>
+                            <li class="li-font">I learn more about HTML, and CSS stucture.</li>
+                            <li class="li-font">I get myself involued in constructive conversations with other developers.</li>
+                        </ul>
+
+                            
+                    </div> 
+    
+                    <div class="cl cl-left">
+                        <img src="images/design-desk-display-313690.jpg" alt="">
+                    </div>
+        
+                    <div class="clear-fix"></div>
+                    
+                </section>
+        
+        <section class="container">
+        
+                <div class="cl cl-left">
+                     <img src="images/man-phone.jpg" alt=""> 
+                </div>
+                <div class="cl ">
+                    <form action="" class="form">
+                        <div class="form-gp">
+                            <label for="">Name</label>
+                            <input type="text" class="form-input">
+                        </div>
+                        <div class="form-gp">
+                            <label for="">Email</label>
+                            <input type="text" class="form-input">
+                        </div>
+                        <div class="form-gp">
+                            <label for="">Phone</label>
+                            <input type="text" class="form-input">
+                        </div>
+                        <div class="form-gp">
+                            <label for="">Message</label>
+                            <textarea class="form-input"> </textarea>
+                        </div>
+                        <div class="form-gp">
+                            <input type="submit" value="send" class="btn">
+                        </div>
+                    </form>
+                </div>
+                <div class="clear-fix"></div>
+                
+        </section>
+   
+    <footer class="footer">
+          <ul>
+              <li><a href="#"><img src="./images/facebook.svg" alt="facebook" srcset="" class="social-icon"></a></li>
+              <li><a href="#"><img src="./images/twitter.svg" alt="twitter" srcset="" class="social-icon"></a></li>
+              <li><a href="#"><img src="./images/instagram.svg" alt="instagram" srcset=""  class="social-icon"></a></li>
+              <li><a href="#"><img src="./images/whatsapp.svg" alt="whatsapp" srcset="" class="social-icon"></a></li>
+          </ul> 
+        <div >
+                <p>Copyright&copy; 2019</p>
+        </div>
+      
+    </footer>
+</body>
+
+</html>-
