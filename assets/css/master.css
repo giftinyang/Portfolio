@@ -1,0 +1,150 @@
+.hero{
+  height: 50vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url("../images/bg-2.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .title {
+  font-size: 4rem;
+  color: #FFFFFF;
+}
+
+.portfolio-container {
+  display: flex;
+  padding: 2% 5%;
+}
+
+.portfolio-container .col {
+  width: 100%;
+}
+.portfolio-container .col h1{
+  margin-bottom: 12px;
+}
+.portfolio-container .col p{
+  text-align: justify;
+}
+.portfolio-container .col img {
+  width: 100%;
+  height: 450px;
+}
+
+.portfolio-container .col:first-child {
+  padding-right: 3%;
+}
+
+.portfolio-container .col:last-child {
+  padding-left: 3%;
+}
+
+.portfolio-story-container {
+  display: flex;
+  padding: 2% 5%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../images/bg-2.jpg");
+}
+.portfolio-story-container p{
+  text-align: justify;
+  color: #FFFFFF;
+}
+.contact-row {
+  display:flex;
+  padding: 3% 0%;
+}
+.contact-row .col{
+  width:100%;
+}
+.contact-form {
+  padding: 2% 5%;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+textarea {
+  resize:none;
+}
+.team-container{
+  display: flex;
+  justify-content: center;
+  padding: 5% 0%;
+}
+.flex-container {
+  width:95%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #FFFFFF;
+}
+
+.flex-container > div {
+  /* background-color: #f2f2f2; */
+  width: 250px;
+  margin-left: 35px;
+  margin-top: 20px;
+  max-height:500px;
+}
+.team-memeber-image{
+  max-width: 200px;
+  min-width: 200px;
+  max-height: 200px;
+  min-height: 200px;
+  border-radius: 100%;
+  margin-bottom: 10px;
+}
+.about-team-member  {
+  padding :1% 4%;
+}
+.about-team-member p {
+  font-size: 14px;
+  text-align:justify;
+}
+.about-team-member h2, h3{
+  text-align:center;
+}
+.member-card {
+  padding: 10px;
+  border-radius: 5px;
+}
+.member-card:hover{
+  box-shadow: 1px 12px 16px 0 rgba(0,0,0,0.24), 1px 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+@media only screen and (max-width: 991px) {
+  .portfolio-container {
+    display: block;
+    padding: 2% 5%;
+  }
+  .portfolio-container .col:first-child {
+    padding-right: 3%;
+  }
+
+  .portfolio-container .col:last-child {
+    padding-right: 3%;
+    padding-left: 0%;
+  }
+  .contact-row {
+    display:block;
+  }
+}

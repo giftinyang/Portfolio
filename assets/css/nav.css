@@ -35,7 +35,7 @@
 
 .topnav a:hover {
   font-weight: bold;
-  color: #FFFFFF;
+  color: #111111;
 }
 .topnav .brand:hover {
   background-color: transparent;
@@ -57,8 +57,94 @@
 .topnav a:not(:first-child) {
   float: right;
 }
-@media screen and (max-width: 991px) {
 
+footer {
+  min-height: 25vh;
+  padding: 0 7%;
+  background: linear-gradient(to right, rgba(255,255,255,1) 10%, rgba(55,121,185,1) 29%, rgba(12,38,66,0.97) 100%);
+}
+footer p{
+  color: #FFFFFF;
+}
+footer .top-footer {
+  display:flex;
+}
+
+footer .col {
+ width:100%;
+}
+footer .col-end {
+  display: flex;
+  justify-content: flex-end;
+}
+footer .col-center {
+  display: flex;
+  justify-content: center;
+}
+footer .title{
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+footer .social{
+  padding: 0% 3%;
+}
+.social .title {
+  margin-top: 20px;
+}
+.social .d-flex {
+  margin-bottom: 30px;
+}
+.footer-list{
+  list-style-type: none;
+  color:#FFFFFF;
+  font-size: 16px;
+  margin-top: 10%;
+}
+.footer-list li{
+ margin-bottom:30px;
+}
+.fa-facebook-f{
+  color: blue;
+}
+.fa-twitter{
+  color: rgba(12,38,66,0.97);
+}
+.fa-instagram{
+  color: maroon;
+}
+.icon {
+  min-width: 30px;
+  min-height: 30px;
+  border-radius: 100%;
+  background: #FFFFFF;
+  margin-right: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+.icon a {
+  text-decoration: none;
+}
+.phone-number {
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.w-100{
+  width: 100%;
+}
+.d-flex {
+  display: flex;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.mini-footer {
+  display: none;
+}
+.main-footer {
+  display: flex;
 }
 
 @media screen and (max-width: 991px) {
@@ -82,6 +168,7 @@
     float: none;
     display: block;
     text-align: left;
+    margin-bottom: 20px;
   }
   .topnav .nav-link{
     color: #000000;
@@ -90,5 +177,21 @@
   }
   .topnav.responsive .logo {
     margin-top:0px;
+  }
+  footer {
+    height: 100%;
+    background: rgba(12,38,66,0.97);
+  }
+  /* footer .top-footer {
+    display:block;
+  } */
+  footer .top-footer .logo{
+    display:none;
+  }
+  .top-footer {
+    display: none!important;
+  }
+  .mini-footer {
+    display: block;
   }
 }
